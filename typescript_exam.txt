@@ -1,0 +1,52 @@
+
+1) Write a TypeScript program that checks if a given
+number is odd or even. 
+
+ans -> function to_check_odd_even (Num_ber:number): string {
+    if(Num_ber % 2 ===0) {
+       return "even";
+         }
+      else {
+         return "odd";
+}
+}
+
+const even_number_to_check = 24;
+const result = to_check_odd_even ( even_number_to_check);
+console.log(`${ even_number_to_check} is an$ {result} number`);
+   
+
+const odd_number_check = 19;
+const result1 = to_check_odd_even( odd_number_check );
+console.log(`${odd_number_check} is an ${result1} number`);
+
+
+
+ compile  with comman => tsc file_name.ts 
+                         node ./file_name.ts
+
+output =>24 is an$ {result} number
+19 is an odd number
+
+
+2) Write a TypeScript program that finds the maximum of
+three numbers. Set-C
+ans=>  function find_maximum (element1:number,element2:number,element3:number):number{
+    let max: number= element1;
+    if (element2>element3){
+        max = element2;
+    }
+
+    if (element3>max) {
+        max = element3;
+    }
+       return max;
+}
+
+let num1: number =20;
+let num2: number =85;
+let num3: number =25;
+
+console.log(`the manimum of ${num1},${num2},${num3} is ${find_maximum(num1,num2,num3)}`)
+
+ output=>the manimum of 20,85,25 is 85
